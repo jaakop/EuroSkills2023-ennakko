@@ -23,16 +23,16 @@
 
   @keyframes bob {
     0% {
-      transform: translateY(0px);
+      transform: translateY(0px) rotate(180deg);
     }
     10% {
-        transform: translateY(-15px);
+        transform: translateY(-15px) rotate(180deg);
     }
     90% {
-        transform: translateY(-15px);
+        transform: translateY(-15px) rotate(180deg);
     }
     100% {
-      transform: translateY(0px);
+      transform: translateY(0px) rotate(180deg);
     }
   }
 
@@ -44,7 +44,8 @@ html, body {
 .landing {
     width: 100vw;
     height: 100vh;
-    background-image: url('./media/images/concert/actionvance-eXVd7gDPO9A-unsplash.jpg');
+    background-image: url('./media/images/concert/aditya-chinchure-ZhQCZjr9fHo-unsplash.jpg');
+    background-position-y: -150px;
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -57,23 +58,34 @@ html, body {
     font-size: 92px;
     padding: 3rem;
     margin: 0;
-    background-color: rgba(0, 0, 0, 0.75);
+    background-color: rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(2px);
 }
 
 .landing .content .desc {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: stretch;
     flex-direction: row;
     background-color: rgba(0, 0, 0, 1);
     padding-left: 3rem;
     font-family: 'IBM Plex Mono', monospace;
 } 
+
+
+.landing .content .desc > p:nth-child(1){
+    text-align: right;
+} 
+.landing .content .desc > p:nth-child(2){
+    text-align: center;
+} 
+
 .landing .content .desc .carousel {
     width: 175px;
     height: 20px;
     margin: 0;
     padding: 0;
+    margin-top: -1rem
 }
 
 .landing .content .desc .carousel li {
