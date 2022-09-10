@@ -1,0 +1,112 @@
+@keyframes carousel {
+    0% {
+      transform: translateY(-25px);
+      opacity: 0;
+    }
+    1% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    16% {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+    17% {
+      transform: translateY(25px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(25px);
+      opacity: 0;
+    }
+  }
+
+  @keyframes bob {
+    0% {
+      transform: translateY(0px);
+    }
+    10% {
+        transform: translateY(-15px);
+    }
+    90% {
+        transform: translateY(-15px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
+.landing {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('./media/images/concert/actionvance-eXVd7gDPO9A-unsplash.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.landing .content {
+    color: white;
+}
+.landing .content h1 {
+    font-size: 92px;
+    padding: 3rem;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+.landing .content .desc {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    background-color: rgba(0, 0, 0, 1);
+    padding-left: 3rem;
+    font-family: 'IBM Plex Mono', monospace;
+} 
+.landing .content .desc .carousel {
+    width: 175px;
+    height: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.landing .content .desc .carousel li {
+    list-style: none;
+    animation: carousel 30s infinite;
+    position: absolute;
+    top: 100%;
+    opacity: 0;
+    top: auto;
+}
+.landing .content .desc .carousel li:nth-child(2) {
+ animation-delay: 5s;
+}
+.landing .content .desc .carousel li:nth-child(3) {
+ animation-delay: 10s;
+}
+.landing .content .desc .carousel li:nth-child(4) {
+ animation-delay: 15s;
+}
+.landing .content .desc .carousel li:nth-child(5) {
+ animation-delay: 20s;
+}
+.landing .content .desc .carousel li:nth-child(6) {
+ animation-delay: 25s;
+}
+
+#scroll-down {
+    animation: bob 2s infinite;
+    margin: 0;
+    font-size: 80px;
+    position: absolute;
+    bottom: 0;
+    color: white;
+    cursor: pointer;
+    user-select: none;
+}
