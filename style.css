@@ -176,6 +176,29 @@ nav a:hover {
   background-color: rgba(255, 255, 255, 0.05);
 }
 
+#Tickets{
+  margin-top: 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#Tickets a{
+  width: fit-content;
+  font-size: 2rem;
+  border: 3px rgba(0, 0, 0, 1) solid;
+  padding: 1rem;
+  color: black;
+  text-decoration: none;
+}
+
+#Tickets a:hover{
+  background-color: rgba(0, 0, 0, 0.05);
+}
+#Tickets a:visited{
+  text-decoration: none;
+}
+
 #Schedule {
   display: flex;
   align-items: center;
@@ -225,12 +248,12 @@ nav a:hover {
   animation: carouselX 30s infinite;
   position: absolute;
   opacity: 0;
-  top: 105.3%;
+  top: 120%;
   right: 0;
 }
 
 #Schedule .artists .descriptions li{
-  top: 155vh;
+  top: 170%;
   color: black;
   text-shadow: none;
   height: fit-content;
@@ -329,6 +352,27 @@ nav a:hover {
 }
 
 @media screen and (max-width: 560px) {
+  
+#Schedule {
+  flex-direction: column;
+}
+
+
+#Schedule .artists li{
+  top: 155%;
+  left: 0;
+  width: 100%;
+}
+
+#Schedule .artists .descriptions li{
+  top: 205%;
+  color: black;
+  text-shadow: none;
+  height: fit-content;
+  padding: 0.5rem;
+  background-image: none;
+}
+
   .landing .content .desc {flex-direction: column;}
   .landing .content .desc > * {
     text-align: center !important;
