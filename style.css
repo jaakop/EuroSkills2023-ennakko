@@ -79,7 +79,7 @@ html, body {
     box-shadow: 0 0 10px 20px rgb(0 0 0 / 20%);
 }
 .landing .content h1 {
-    font-size: 6rem;
+    font-size: min(10vw, 6rem);
     padding: 3rem;
     margin: 0;
     background-color: rgba(0, 0, 0, 0.15);
@@ -92,9 +92,11 @@ html, body {
     align-items: stretch;
     flex-direction: row;
     background-color: rgba(0, 0, 0, 1);
-    padding-left: 3rem;
 } 
 
+.landing .content .desc >* {
+  padding: 1rem;
+} 
 
 .landing .content .desc > p:nth-child(1){
     text-align: right;
@@ -117,6 +119,7 @@ html, body {
     position: absolute;
     opacity: 0;
     top: auto;
+    width: 11rem;
 }
 .landing .content .desc .carousel li:nth-child(2) {
  animation-delay: 5s;
@@ -199,7 +202,7 @@ nav a:hover {
 #Schedule .artists {
   flex-direction: column;
   justify-content: center;
-  height: 62vh;
+  height: 73vh;
 }
 
 #Schedule .artists ul{
@@ -209,7 +212,7 @@ nav a:hover {
 }
 
 #Schedule .artists li{
-  width: 49.15%;
+  width: 50vw;
   height: 50%;
   list-style: none;
   display: flex;
@@ -218,10 +221,12 @@ nav a:hover {
   text-shadow: -2px 2px black;
   padding-left: 1rem;
   background-size: cover;
+  background-position-x: center;
   animation: carouselX 30s infinite;
   position: absolute;
   opacity: 0;
   top: 105.3%;
+  right: 0;
 }
 
 #Schedule .artists .descriptions li{
@@ -266,14 +271,15 @@ nav a:hover {
 #Testimonials div{
   width: 50%;
   max-width: 50%;
-  height: 20vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-top: 1rem;
 }
 
 #Testimonials div *{
-  padding: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 #Testimonials blockquote{
@@ -320,4 +326,16 @@ nav a:hover {
 
 #FAQ hr {
   width: 50%;
+}
+
+@media screen and (max-width: 560px) {
+  .landing .content .desc {flex-direction: column;}
+  .landing .content .desc > * {
+    text-align: center !important;
+  }
+
+  .landing .content .desc .carousel li {
+    left: calc(50% - 5.5rem);
+    text-align: center;
+  }
 }
