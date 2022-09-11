@@ -256,6 +256,44 @@ nav a:hover {
   animation-delay: 25s;
 }
 
+#Testimonials {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#Testimonials div{
+  width: 50%;
+  max-width: 50%;
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#Testimonials div *{
+  padding: 1rem;
+}
+
+#Testimonials blockquote{
+  font-style: italic;
+}
+
+#Testimonials blockquote span{
+  font-size: 2rem;
+  padding: 0;
+}
+
+#Testimonials .title {
+  align-items: center;
+}
+
+#Testimonials .city-image {
+  background-image: url('./media/images/graz/josh-hild-03NoCdSvbLw-unsplash.jpg');
+  background-size: cover;
+  height: 40vh;
+  background-position: 50%;
+}
+
 #FAQ {
   text-align: center;
   display: flex;
