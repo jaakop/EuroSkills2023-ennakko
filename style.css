@@ -183,6 +183,8 @@ nav a:hover {
 
 #Schedule .time-table {
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 #Schedule .time-table li {
