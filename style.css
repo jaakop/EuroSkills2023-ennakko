@@ -39,6 +39,7 @@
 html, body {
     padding: 0;
     margin: 0;
+    font-family: 'IBM Plex Mono', monospace;
 }
 
 .landing {
@@ -60,6 +61,7 @@ html, body {
     margin: 0;
     background-color: rgba(0, 0, 0, 0.15);
     backdrop-filter: blur(2px);
+    box-shadow: 0 0 10px 20px rgb(0 0 0 / 20%);
 }
 
 .landing .content .desc {
@@ -69,7 +71,6 @@ html, body {
     flex-direction: row;
     background-color: rgba(0, 0, 0, 1);
     padding-left: 3rem;
-    font-family: 'IBM Plex Mono', monospace;
 } 
 
 
@@ -81,8 +82,8 @@ html, body {
 } 
 
 .landing .content .desc .carousel {
-    width: 175px;
-    height: 20px;
+    width: 11rem;
+    height: 1.3rem;
     margin: 0;
     padding: 0;
     margin-top: -1rem
@@ -112,7 +113,7 @@ html, body {
  animation-delay: 25s;
 }
 
-#scroll-down {
+.scroll-down {
     animation: bob 2s infinite;
     margin: 0;
     font-size: 80px;
@@ -126,24 +127,51 @@ html, body {
 }
 
 nav {
+  position: sticky;
+  top: 0;
   display: flex;
   flex-direction: row;
   background-color: rgba(0, 0, 0, 1);
   color: white;
-  font-family: 'IBM Plex Mono', monospace;
   justify-content: center;
 }
 
 nav a {
   text-decoration: none;
+  color: white;
   padding: 1rem;
 }
 
 nav a:visited {
-  text-decoration: none;
   color: white;
 }
 
 nav a:hover {
   background-color: rgba(255, 255, 255, 0.05);
+}
+
+#FAQ {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#FAQ div {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#FAQ p {
+  width: fit-content;
+}
+
+#FAQ .question {
+  font-weight: bold;
+}
+
+#FAQ hr {
+  width: 50%;
 }
