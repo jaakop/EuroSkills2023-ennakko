@@ -70,6 +70,7 @@ html, body {
     height: 100vh;
     background-image: url('./media/images/concert/aditya-chinchure-ZhQCZjr9fHo-unsplash.jpg');
     background-size: cover;
+    background-position-x: center;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -80,7 +81,7 @@ html, body {
 }
 .landing .content h1 {
     font-size: min(10vw, 6rem);
-    padding: 3rem;
+    padding: 2rem;
     margin: 0;
     background-color: rgba(0, 0, 0, 0.15);
     backdrop-filter: blur(2px);
@@ -159,6 +160,7 @@ nav {
   background-color: rgba(0, 0, 0, 1);
   color: white;
   justify-content: center;
+  flex-wrap: wrap;
   z-index: 99;
 }
 
@@ -225,7 +227,7 @@ nav a:hover {
 #Schedule .artists {
   flex-direction: column;
   justify-content: center;
-  height: 73vh;
+  height: 80vh;
 }
 
 #Schedule .artists ul{
@@ -326,6 +328,7 @@ nav a:hover {
 }
 
 #FAQ {
+  margin-top: 10vh;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -355,22 +358,27 @@ nav a:hover {
   
 #Schedule {
   flex-direction: column;
+  height: 65rem;
 }
 
+#Schedule .artists{
+  height: 0;
+}
 
 #Schedule .artists li{
-  top: 155%;
-  left: 0;
+  top: initial;
+  left: initial;
   width: 100%;
+  padding: 0;
+  height: 20rem;
 }
 
 #Schedule .artists .descriptions li{
-  top: 205%;
-  color: black;
-  text-shadow: none;
-  height: fit-content;
-  padding: 0.5rem;
-  background-image: none;
+  top: initial;
+  margin-top: 20rem;
+  left: 1%;
+  padding: 0;
+  max-width: 98%;
 }
 
   .landing .content .desc {flex-direction: column;}
@@ -381,5 +389,12 @@ nav a:hover {
   .landing .content .desc .carousel li {
     left: calc(50% - 5.5rem);
     text-align: center;
+  }
+  #Testimonials {
+    flex-direction: column;
+  }
+  #Testimonials div{
+    width: 100%;
+    max-width: 100%;
   }
 }
