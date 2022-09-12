@@ -1,3 +1,8 @@
+:root {
+  --title-font: 'Roboto Slab', serif;
+  --main-font:  'IBM Plex Mono', monospace;
+}
+
 @keyframes carouselY {
     0% {
       transform: translateY(-25px);
@@ -62,7 +67,7 @@
 html, body, footer {
     padding: 0;
     margin: 0;
-    font-family: 'IBM Plex Mono', monospace;
+    font-family: var(--main-font);
 }
 
 .landing {
@@ -86,6 +91,7 @@ html, body, footer {
     margin: 0;
     background-color: rgba(0, 0, 0, 0.15);
     backdrop-filter: blur(2px);
+    font-family: var(--title-font);
 }
 
 .landing .content .desc {
