@@ -59,7 +59,7 @@
     }
   }
 
-html, body {
+html, body, footer {
     padding: 0;
     margin: 0;
     font-family: 'IBM Plex Mono', monospace;
@@ -359,6 +359,12 @@ nav a:hover {
 
 #FAQ hr {
   width: 50%;
+}
+
+footer {
+  background-color: black;
+  width: 100%;
+  height: 2rem;
 }
 
 @media screen and (max-width: 560px) {
