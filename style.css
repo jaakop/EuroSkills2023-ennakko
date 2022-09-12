@@ -93,6 +93,7 @@ html, body, footer {
   background-size: cover;
   background-position-x: center;
   background-attachment: fixed;
+  background-position-y: bottom;
   display: flex;
   justify-content: center;
   align-items: center;
