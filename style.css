@@ -227,18 +227,19 @@ nav a:hover {
 #Schedule .artists {
   flex-direction: column;
   justify-content: center;
-  height: 80vh;
+  height: 90vh;
 }
 
 #Schedule .artists ul{
   width: 100%;
   margin: 0;
   padding: 0;
+  position: relative;
 }
 
 #Schedule .artists li{
   width: 50vw;
-  height: 50%;
+  height: 50vh;
   list-style: none;
   display: flex;
   align-items: flex-end;
@@ -250,12 +251,13 @@ nav a:hover {
   animation: carouselX 30s infinite;
   position: absolute;
   opacity: 0;
-  top: 120%;
+  top: -35vh;
   right: 0;
 }
 
 #Schedule .artists .descriptions li{
-  top: 170%;
+  font-size: min(0.8rem, 1.8vw);
+  top: 15vh;
   color: black;
   text-shadow: none;
   height: fit-content;
