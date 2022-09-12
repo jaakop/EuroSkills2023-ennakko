@@ -210,14 +210,14 @@ nav a:hover {
   background-color: rgba(var(--highlight-color), 0.2);
 }
 
-#Tickets {
+.tickets {
   margin-top: 1rem;
   width: 100%;
   display: flex;
   justify-content: center;
 }
 
-#Tickets a {
+.tickets a {
   width: fit-content;
   font-size: 2rem;
   border: 3px rgba(var(--main-color), 1) solid;
@@ -226,11 +226,11 @@ nav a:hover {
   text-decoration: none;
 }
 
-#Tickets a:hover {
+.tickets a:hover {
   background-color: rgba(var(--main-color), 0.05);
 }
 
-#Tickets a:visited {
+.tickets a:visited {
   text-decoration: none;
 }
 
