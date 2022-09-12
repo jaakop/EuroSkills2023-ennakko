@@ -307,6 +307,7 @@ nav a:hover {
   text-shadow: none;
   height: fit-content;
   padding: 0.5rem;
+  padding-right: 0;
   left: -.75rem;
   width: 49vw;
   background-image: none;
