@@ -393,6 +393,7 @@ nav a:hover {
   .landing .content .desc {flex-direction: column;}
   .landing .content .desc > * {
     text-align: center !important;
+    margin: 0;
   }
 
   .landing .content .desc .carousel li {
