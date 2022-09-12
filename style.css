@@ -1,6 +1,10 @@
 :root {
   --title-font: 'Roboto Slab', serif;
   --main-font:  'IBM Plex Mono', monospace;
+  --main-color: 0,0,0;
+  --highlight-color: 255,255,255;
+  --text-color: 0,0,0;
+  --text-color-light: 255, 255 ,255;
 }
 
 @keyframes carouselY {
@@ -68,6 +72,7 @@ html, body, footer {
     padding: 0;
     margin: 0;
     font-family: var(--main-font);
+    color: rgb(var(--text-color));
 }
 
 .landing {
@@ -82,14 +87,14 @@ html, body, footer {
     align-items: center;
 }
 .landing .content {
-    color: white;
+    color: rgb(var(--text-color-light));
     box-shadow: 0 0 10px 20px rgb(0 0 0 / 20%);
 }
 .landing .content h1 {
     font-size: min(10vw, 6rem);
     padding: 2rem;
     margin: 0;
-    background-color: rgba(0, 0, 0, 0.15);
+    background-color: rgba(var(--main-color), 0.15);
     backdrop-filter: blur(2px);
     font-family: var(--title-font);
 }
@@ -99,7 +104,7 @@ html, body, footer {
     justify-content: space-between;
     align-items: stretch;
     flex-direction: row;
-    background-color: rgba(0, 0, 0, 1);
+    background-color: rgba(var(--main-color), 1);
 } 
 
 .landing .content .desc >* {
@@ -151,7 +156,7 @@ html, body, footer {
     font-size: 80px;
     position: absolute;
     bottom: 0;
-    color: white;
+    color: rgb(var(--text-color-light));
     cursor: pointer;
     user-select: none;
     font-weight: bold;
@@ -163,8 +168,8 @@ nav {
   top: 0;
   display: flex;
   flex-direction: row;
-  background-color: rgba(0, 0, 0, 1);
-  color: white;
+  background-color: rgba(var(--main-color), 1);
+  color: rgb(var(--text-color-light));
   justify-content: center;
   flex-wrap: wrap;
   z-index: 99;
@@ -172,16 +177,16 @@ nav {
 
 nav a {
   text-decoration: none;
-  color: white;
+  color: rgb(var(--text-color-light));
   padding: 1rem;
 }
 
 nav a:visited {
-  color: white;
+  color: rgb(var(--text-color-light));
 }
 
 nav a:hover {
-  background-color: rgba(255, 255, 255, 0.05);
+  background-color: rgba(var(--highlight-color), 0.2);
 }
 
 #Tickets{
@@ -194,14 +199,14 @@ nav a:hover {
 #Tickets a{
   width: fit-content;
   font-size: 2rem;
-  border: 3px rgba(0, 0, 0, 1) solid;
+  border: 3px rgba(var(--main-color), 1) solid;
   padding: 1rem;
-  color: black;
+  color: rgb(var(--text-color));
   text-decoration: none;
 }
 
 #Tickets a:hover{
-  background-color: rgba(0, 0, 0, 0.05);
+  background-color: rgba(var(--main-color), 0.05);
 }
 #Tickets a:visited{
   text-decoration: none;
@@ -249,7 +254,7 @@ nav a:hover {
   list-style: none;
   display: flex;
   align-items: flex-end;
-  color: white;
+  color: rgb(var(--text-color-light));
   text-shadow: -2px 2px black;
   padding-left: 1rem;
   background-size: cover;
@@ -275,7 +280,7 @@ nav a:hover {
 #Schedule .artists .descriptions li{
   font-size: min(0.8rem, 1.8vw);
   top: 15vh;
-  color: black;
+  color: rgb(var(--text-color));
   text-shadow: none;
   height: fit-content;
   padding: 0.5rem;
@@ -368,7 +373,7 @@ nav a:hover {
 }
 
 footer {
-  background-color: black;
+  background-color: rgb(var(--main-color));
   width: 100%;
   height: 2rem;
 }
