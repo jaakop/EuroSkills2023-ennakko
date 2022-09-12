@@ -84,6 +84,7 @@ html, body, footer {
   margin: 0;
   font-family: var(--main-font);
   color: rgb(var(--text-color));
+  scroll-behavior: smooth;
 }
 
 .landing {
