@@ -253,6 +253,17 @@ nav a:hover {
   opacity: 0;
   top: -35vh;
   right: 0;
+  overflow: hidden;
+  justify-content: center;
+}
+
+
+#Schedule .artists li img{
+  height: 100%;
+}
+
+#Schedule .artists li h1{
+  position: absolute;
 }
 
 #Schedule .artists .descriptions li{
@@ -262,30 +273,25 @@ nav a:hover {
   text-shadow: none;
   height: fit-content;
   padding: 0.5rem;
+  left: -.75rem;
+  width: 49vw;
   background-image: none;
+  text-align: center;
 }
 
-#Schedule .Bilderbuch{
-  background-image: url('./media/images/artists/bilderbuch2.jpg');
-}
-#Schedule .artists .Wanda {
-  background-image: url('./media/images/artists/wanda3.jpg');
+#Schedule .artists li:nth-child(2) {
   animation-delay: 5s;
 }
-#Schedule .artists .Christina {
-  background-image: url('./media/images/artists/christina-sturmer3.jpg');
+#Schedule .artists li:nth-child(3) {
   animation-delay: 10s;
 }
-#Schedule .artists .Volbeat {
-  background-image: url('./media/images/artists/volbeat2.jpg');
+#Schedule .artists li:nth-child(4) {
   animation-delay: 15s;
 }
-#Schedule .artists .Imagine {
-  background-image: url('./media/images/artists/imagine-dragons2.jpg');
+#Schedule .artists li:nth-child(5) {
   animation-delay: 20s;
 }
-#Schedule .artists .Opus {
-  background-image: url('./media/images/artists/opus.jpg');
+#Schedule .artists li:nth-child(6) {
   animation-delay: 25s;
 }
 
@@ -322,9 +328,8 @@ nav a:hover {
   align-items: center;
 }
 
-#Testimonials .city-image {
-  background-image: url('./media/images/graz/josh-hild-03NoCdSvbLw-unsplash.jpg');
-  background-size: cover;
+#Testimonials .city-image  {
+  overflow: hidden;
   height: 40vh;
   background-position: 50%;
 }
@@ -369,18 +374,20 @@ nav a:hover {
 
 #Schedule .artists li{
   top: initial;
-  left: initial;
-  width: 100%;
+  left: 5%;
+  width: 90%;
   padding: 0;
-  height: 20rem;
+  height: 67vw;
 }
 
 #Schedule .artists .descriptions li{
   top: initial;
-  margin-top: 20rem;
+  margin-top: 70vw;
   left: 1%;
   padding: 0;
   max-width: 98%;
+  font-size: 1rem;
+  width: auto;
 }
 
   .landing .content .desc {flex-direction: column;}
