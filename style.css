@@ -1,166 +1,185 @@
 :root {
   --title-font: 'Roboto Slab', serif;
-  --main-font:  'IBM Plex Mono', monospace;
-  --main-color: 0,0,0;
-  --highlight-color: 255,255,255;
-  --text-color: 0,0,0;
-  --text-color-light: 255, 255 ,255;
+  --main-font: 'IBM Plex Mono', monospace;
+  --main-color: 0, 0, 0;
+  --highlight-color: 255, 255, 255;
+  --text-color: 0, 0, 0;
+  --text-color-light: 255, 255, 255;
 }
 
 @keyframes carouselY {
-    0% {
-      transform: translateY(-25px);
-      opacity: 0;
-    }
-    1% {
-      transform: translateY(0);
-      opacity: 1;
-    }
-    16% {
-      transform: translateY(0px);
-      opacity: 1;
-    }
-    17% {
-      transform: translateY(25px);
-      opacity: 0;
-    }
-    100% {
-      transform: translateY(25px);
-      opacity: 0;
-    }
+  0% {
+    transform: translateY(-25px);
+    opacity: 0;
   }
 
-  @keyframes carouselX {
-    0% {
-      transform: translateX(-25px);
-      opacity: 0;
-    }
-    1% {
-      transform: translateX(0);
-      opacity: 1;
-    }
-    16% {
-      transform: translateX(0px);
-      opacity: 1;
-    }
-    17% {
-      transform: translateX(0px);
-      opacity: 0;
-    }
-    100% {
-      transform: translateX(0px);
-      opacity: 0;
-    }
+  1% {
+    transform: translateY(0);
+    opacity: 1;
   }
 
-  @keyframes bob {
-    0% {
-      transform: translateY(0px) rotate(180deg);
-    }
-    10% {
-        transform: translateY(-15px) rotate(180deg);
-    }
-    90% {
-        transform: translateY(-15px) rotate(180deg);
-    }
-    100% {
-      transform: translateY(0px) rotate(180deg);
-    }
+  16% {
+    transform: translateY(0px);
+    opacity: 1;
   }
+
+  17% {
+    transform: translateY(25px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(25px);
+    opacity: 0;
+  }
+}
+
+@keyframes carouselX {
+  0% {
+    transform: translateX(-25px);
+    opacity: 0;
+  }
+
+  1% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  16% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+
+  17% {
+    transform: translateX(0px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0px);
+    opacity: 0;
+  }
+}
+
+@keyframes bob {
+  0% {
+    transform: translateY(0px) rotate(180deg);
+  }
+
+  10% {
+    transform: translateY(-15px) rotate(180deg);
+  }
+
+  90% {
+    transform: translateY(-15px) rotate(180deg);
+  }
+
+  100% {
+    transform: translateY(0px) rotate(180deg);
+  }
+}
 
 html, body, footer {
-    padding: 0;
-    margin: 0;
-    font-family: var(--main-font);
-    color: rgb(var(--text-color));
+  padding: 0;
+  margin: 0;
+  font-family: var(--main-font);
+  color: rgb(var(--text-color));
 }
 
 .landing {
-    width: 100%;
-    height: 100vh;
-    background-image: url('./media/images/concert/aditya-chinchure-ZhQCZjr9fHo-unsplash.jpg');
-    background-size: cover;
-    background-position-x: center;
-    background-attachment: fixed;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-image: url('./media/images/concert/aditya-chinchure-ZhQCZjr9fHo-unsplash.jpg');
+  background-size: cover;
+  background-position-x: center;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
 .landing .content {
-    color: rgb(var(--text-color-light));
-    box-shadow: 0 0 10px 20px rgb(0 0 0 / 20%);
+  color: rgb(var(--text-color-light));
+  box-shadow: 0 0 10px 20px rgb(0 0 0 / 20%);
 }
+
 .landing .content h1 {
-    font-size: min(10vw, 6rem);
-    padding: 2rem;
-    margin: 0;
-    background-color: rgba(var(--main-color), 0.15);
-    backdrop-filter: blur(2px);
-    font-family: var(--title-font);
+  font-size: min(10vw, 6rem);
+  padding: 2rem;
+  margin: 0;
+  background-color: rgba(var(--main-color), 0.15);
+  backdrop-filter: blur(2px);
+  font-family: var(--title-font);
 }
 
 .landing .content .desc {
-    display: flex;
-    justify-content: space-between;
-    align-items: stretch;
-    flex-direction: row;
-    background-color: rgba(var(--main-color), 1);
-} 
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-direction: row;
+  background-color: rgba(var(--main-color), 1);
+}
 
-.landing .content .desc >* {
+.landing .content .desc>* {
   padding: 1rem;
-} 
+}
 
-.landing .content .desc > p:nth-child(1){
-    text-align: right;
-} 
-.landing .content .desc > p:nth-child(2){
-    text-align: center;
-} 
+.landing .content .desc>p:nth-child(1) {
+  text-align: right;
+}
+
+.landing .content .desc>p:nth-child(2) {
+  text-align: center;
+}
 
 .landing .content .desc .carousel {
-    width: 11rem;
-    height: 1.3rem;
-    margin: 0;
-    padding: 0;
-    margin-top: -1rem
+  width: 11rem;
+  height: 1.3rem;
+  margin: 0;
+  padding: 0;
+  margin-top: -1rem
 }
 
 .landing .content .desc .carousel li {
-    list-style: none;
-    animation: carouselY 30s infinite;
-    position: absolute;
-    opacity: 0;
-    top: auto;
-    width: 11rem;
+  list-style: none;
+  animation: carouselY 30s infinite;
+  position: absolute;
+  opacity: 0;
+  top: auto;
+  width: 11rem;
 }
+
 .landing .content .desc .carousel li:nth-child(2) {
- animation-delay: 5s;
+  animation-delay: 5s;
 }
+
 .landing .content .desc .carousel li:nth-child(3) {
- animation-delay: 10s;
+  animation-delay: 10s;
 }
+
 .landing .content .desc .carousel li:nth-child(4) {
- animation-delay: 15s;
+  animation-delay: 15s;
 }
+
 .landing .content .desc .carousel li:nth-child(5) {
- animation-delay: 20s;
+  animation-delay: 20s;
 }
+
 .landing .content .desc .carousel li:nth-child(6) {
- animation-delay: 25s;
+  animation-delay: 25s;
 }
 
 .scroll-down {
-    animation: bob 2s infinite;
-    margin: 0;
-    font-size: 80px;
-    position: absolute;
-    bottom: 0;
-    color: rgb(var(--text-color-light));
-    cursor: pointer;
-    user-select: none;
-    font-weight: bold;
-    text-decoration: none;
+  animation: bob 2s infinite;
+  margin: 0;
+  font-size: 80px;
+  position: absolute;
+  bottom: 0;
+  color: rgb(var(--text-color-light));
+  cursor: pointer;
+  user-select: none;
+  font-weight: bold;
+  text-decoration: none;
 }
 
 nav {
@@ -189,14 +208,14 @@ nav a:hover {
   background-color: rgba(var(--highlight-color), 0.2);
 }
 
-#Tickets{
+#Tickets {
   margin-top: 1rem;
   width: 100%;
   display: flex;
   justify-content: center;
 }
 
-#Tickets a{
+#Tickets a {
   width: fit-content;
   font-size: 2rem;
   border: 3px rgba(var(--main-color), 1) solid;
@@ -205,10 +224,11 @@ nav a:hover {
   text-decoration: none;
 }
 
-#Tickets a:hover{
+#Tickets a:hover {
   background-color: rgba(var(--main-color), 0.05);
 }
-#Tickets a:visited{
+
+#Tickets a:visited {
   text-decoration: none;
 }
 
@@ -216,6 +236,7 @@ nav a:hover {
   display: flex;
   align-items: center;
 }
+
 #Schedule div {
   width: 100%;
   display: flex;
@@ -241,14 +262,14 @@ nav a:hover {
   height: 90vh;
 }
 
-#Schedule .artists ul{
+#Schedule .artists ul {
   width: 100%;
   margin: 0;
   padding: 0;
   position: relative;
 }
 
-#Schedule .artists li{
+#Schedule .artists li {
   width: 50vw;
   height: 50vh;
   list-style: none;
@@ -269,15 +290,15 @@ nav a:hover {
 }
 
 
-#Schedule .artists li img{
+#Schedule .artists li img {
   height: 100%;
 }
 
-#Schedule .artists li h1{
+#Schedule .artists li h1 {
   position: absolute;
 }
 
-#Schedule .artists .descriptions li{
+#Schedule .artists .descriptions li {
   font-size: min(0.8rem, 1.8vw);
   top: 15vh;
   color: rgb(var(--text-color));
@@ -293,15 +314,19 @@ nav a:hover {
 #Schedule .artists li:nth-child(2) {
   animation-delay: 5s;
 }
+
 #Schedule .artists li:nth-child(3) {
   animation-delay: 10s;
 }
+
 #Schedule .artists li:nth-child(4) {
   animation-delay: 15s;
 }
+
 #Schedule .artists li:nth-child(5) {
   animation-delay: 20s;
 }
+
 #Schedule .artists li:nth-child(6) {
   animation-delay: 25s;
 }
@@ -312,7 +337,7 @@ nav a:hover {
   margin-top: 2rem;
 }
 
-#Testimonials div{
+#Testimonials div {
   width: 50%;
   max-width: 50%;
   display: flex;
@@ -321,16 +346,16 @@ nav a:hover {
   margin-top: 1rem;
 }
 
-#Testimonials div *{
+#Testimonials div * {
   padding-left: 1rem;
   padding-right: 1rem;
 }
 
-#Testimonials blockquote{
+#Testimonials blockquote {
   font-style: italic;
 }
 
-#Testimonials blockquote span{
+#Testimonials blockquote span {
   font-size: 2rem;
   padding: 0;
 }
@@ -339,7 +364,7 @@ nav a:hover {
   align-items: center;
 }
 
-#Testimonials .city-image  {
+#Testimonials .city-image {
   overflow: hidden;
   height: 40vh;
   background-position: 50%;
@@ -379,36 +404,39 @@ footer {
 }
 
 @media screen and (max-width: 560px) {
-  
-#Schedule {
-  flex-direction: column;
-  height: 65rem;
-}
 
-#Schedule .artists{
-  height: 0;
-}
+  #Schedule {
+    flex-direction: column;
+    height: 65rem;
+  }
 
-#Schedule .artists li{
-  top: initial;
-  left: 5%;
-  width: 90%;
-  padding: 0;
-  height: 67vw;
-}
+  #Schedule .artists {
+    height: 0;
+  }
 
-#Schedule .artists .descriptions li{
-  top: initial;
-  margin-top: 70vw;
-  left: 1%;
-  padding: 0;
-  max-width: 98%;
-  font-size: 1rem;
-  width: auto;
-}
+  #Schedule .artists li {
+    top: initial;
+    left: 5%;
+    width: 90%;
+    padding: 0;
+    height: 67vw;
+  }
 
-  .landing .content .desc {flex-direction: column;}
-  .landing .content .desc > * {
+  #Schedule .artists .descriptions li {
+    top: initial;
+    margin-top: 70vw;
+    left: 1%;
+    padding: 0;
+    max-width: 98%;
+    font-size: 1rem;
+    width: auto;
+  }
+
+  .landing .content .desc {
+    flex-direction: column;
+  }
+
+  .landing .content .desc>* {
     text-align: center !important;
     margin: 0;
   }
@@ -417,10 +445,12 @@ footer {
     left: calc(50% - 5.5rem);
     text-align: center;
   }
+
   #Testimonials {
     flex-direction: column;
   }
-  #Testimonials div{
+
+  #Testimonials div {
     width: 100%;
     max-width: 100%;
   }
