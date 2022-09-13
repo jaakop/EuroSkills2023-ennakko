@@ -144,7 +144,7 @@ html, body, footer {
 
 .landing .content .desc .carousel li {
   list-style: none;
-  animation: carouselY 30s infinite;
+  animation: carouselY 9s infinite;
   position: absolute;
   opacity: 0;
   top: auto;
@@ -152,23 +152,23 @@ html, body, footer {
 }
 
 .landing .content .desc .carousel li:nth-child(2) {
-  animation-delay: 5s;
+  animation-delay: 1.5s;
 }
 
 .landing .content .desc .carousel li:nth-child(3) {
-  animation-delay: 10s;
+  animation-delay: 3s;
 }
 
 .landing .content .desc .carousel li:nth-child(4) {
-  animation-delay: 15s;
+  animation-delay: 4.5s;
 }
 
 .landing .content .desc .carousel li:nth-child(5) {
-  animation-delay: 20s;
+  animation-delay: 6s;
 }
 
 .landing .content .desc .carousel li:nth-child(6) {
-  animation-delay: 25s;
+  animation-delay: 7.5s;
 }
 
 .scroll-down {
@@ -282,7 +282,7 @@ nav a:hover {
   padding-left: 1rem;
   background-size: cover;
   background-position-x: center;
-  animation: carouselX 30s infinite;
+  animation: carouselX 60s infinite;
   position: absolute;
   opacity: 0;
   top: -35vh;
@@ -315,23 +315,23 @@ nav a:hover {
 }
 
 #Schedule .artists li:nth-child(2) {
-  animation-delay: 5s;
-}
-
-#Schedule .artists li:nth-child(3) {
   animation-delay: 10s;
 }
 
-#Schedule .artists li:nth-child(4) {
-  animation-delay: 15s;
-}
-
-#Schedule .artists li:nth-child(5) {
+#Schedule .artists li:nth-child(3) {
   animation-delay: 20s;
 }
 
+#Schedule .artists li:nth-child(4) {
+  animation-delay: 30s;
+}
+
+#Schedule .artists li:nth-child(5) {
+  animation-delay: 40s;
+}
+
 #Schedule .artists li:nth-child(6) {
-  animation-delay: 25s;
+  animation-delay: 50s;
 }
 
 #Testimonials {
