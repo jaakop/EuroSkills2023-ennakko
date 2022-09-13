@@ -347,6 +347,7 @@ nav a:hover {
   flex-direction: column;
   justify-content: center;
   margin-top: 1rem;
+  text-align: center;
 }
 
 #Testimonials div * {
@@ -356,10 +357,12 @@ nav a:hover {
 
 #Testimonials blockquote {
   font-style: italic;
+  line-height: 1.5rem;
 }
 
 #Testimonials blockquote span {
-  font-size: 2rem;
+  font-size: 1.7rem;
+  line-height: 0;
   padding: 0;
 }
 
